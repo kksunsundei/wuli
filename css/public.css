@@ -1,0 +1,180 @@
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+header,footer,section,article,aside,nav,address,figure,figcaption,menu,details{
+    display:block;
+}
+
+html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6{
+    -webkit-text-size-adjust:none;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0px 1000px #fff inset;
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+
+select, input, textarea {
+    outline: none;
+    -webkit-appearance:none;
+}
+/*禁止手动修改大小*/
+textarea {
+    resize: none;
+}
+/*去掉图片底部默认空白缝隙*/
+img{
+    border:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/*合并外连线*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    font-family:"Microsoft Yahei",arial,sans-serif;
+    background: #ffffff;;
+    line-height: 1.5;
+    color:#333;
+}
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+* html.clearfix{
+    height:1%;
+}
+*{
+    background-repeat:no-repeat;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+a{
+    text-decoration:none;
+    border:none;
+    outline:none;
+    color: #000;
+    tap-highlight-color: rgba(0,0,0,0);
+    focus-ring-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-focus-ring-color: rgba(0,0,0,0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+    -moz-focus-ring-color: rgba(0,0,0,0);
+}
+a:visited{
+    color: inherit;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+}
+h1, h2, h3 {
+    line-height: 2;
+    font-weight: normal;
+}
+h1 {
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.6rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/*公共类*/
+.w {
+    /*版心*/
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+/*字体溢出显示...*/
+.clearOver{
+    overflow: hidden; text-overflow:ellipsis; white-space: nowrap;
+}
+/*css初始化完成*/
+
+/*字体图标*/
+@font-face {
+    font-family: 'wuli-font';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+.wuli-icon{
+    font-family:"wuli-font" !important;
+    font-size:.16rem;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.002rem;
+    -moz-osx-font-smoothing: grayscale;
+}
+
